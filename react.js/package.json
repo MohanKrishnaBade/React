@@ -6,7 +6,9 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^2.0.4",
+    "cors": "^2.8.4",
+    "axios": "^0.18.0"
   },
   "scripts": {
     "start": "react-scripts start",

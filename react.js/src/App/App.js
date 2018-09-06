@@ -9,8 +9,20 @@ class App extends Component {
 
     constructor(props) {
         super(props);
+        // this.loadData = this.loadData().bind(this);
+        // this.loadData();
         http.getUsers();
     }
+
+    loadData = () => {
+        http.getUsers().then(
+            users => {
+                console.log(users)
+            }, err => {
+
+            }
+        )
+    };
 
     render() {
         return (

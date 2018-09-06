@@ -1,14 +1,13 @@
-import "whatwg-fetch";
+import axios from "axios";
 
 class HttpService {
 
     getUsers = () => {
-        fetch('http://localhost:8080/users')
-            .then(response => {
-                console.log(response.json());
-            })
+        return new Promise((resolve, reject) => {
+            const url = 'http://127.0.0.1:8000/roles/6';
+            axios.get(url).then(response => console.log(response));
+        });
     }
-
 }
 
 export default HttpService;
